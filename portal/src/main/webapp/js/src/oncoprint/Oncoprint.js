@@ -167,6 +167,7 @@ define("Oncoprint",
                 var clinicalData = params.clinicalData.map(function(i) {
                     if (!utils.is_discrete(i.attr_val)) {
                         i.attr_val = parseFloat(i.attr_val);
+			alert(i);
                     }
                     return i;
                 });
