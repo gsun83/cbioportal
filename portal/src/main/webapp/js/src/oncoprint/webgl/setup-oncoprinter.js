@@ -119,6 +119,7 @@ $(document).ready(function () {
 	if (textarea_input.length > 0) {
 	    if (isInputValid(textarea_input)) {
 		var process_result = processData($('#mutation-file-example').val());
+console.log(process_result);
 		updateOncoprinter(process_result.data_by_gene, 'sample', process_result.altered_by_gene, sample_order, gene_order);
 		$('#error_msg').hide();
 	    } else {
