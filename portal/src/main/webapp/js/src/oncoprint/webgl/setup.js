@@ -1915,7 +1915,7 @@ window.CreateOncoprinterWithToolbar = function (ctr_selector, toolbar_selector) 
 		
 		oncoprint.setHorzZoomToFit(this.altered_ids);
 		oncoprint.scrollTo(0);
-		
+		console.log(oncoprint);
 		LoadingBar.hide();
 	    },
 	    getIds: function() {
