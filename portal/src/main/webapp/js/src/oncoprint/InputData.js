@@ -34,8 +34,8 @@
 define("InputData", function() {
     // *signature:* `string -> _.chain( [{sample_id, gene, mutation}] )`
     var parse_the_mutation = function(str) {
-alert(str);
         var data = d3.tsv.parse(str);
+console.log(data);
         
         // *signature:* `{mutation datum} -> {datum with renamed keys}`
         var munge = function(d) {
